@@ -12,11 +12,29 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 h2 {
   font-size: 4.5rem;
   font-weight: 700;
   padding: 3rem;
   color: #6C63FF;
+}
+
+h4 {
+  display: inline;
+  width: 590px;
+  height: 150px;
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 1.5rem;
+  color: #6C63FF;
+  text-align: center;
 }
 
 button {
@@ -30,6 +48,7 @@ button {
   padding: 1.5rem 3rem;
   border-radius: 20px;
   margin: 3rem;
+  cursor: pointer;
 }
 
 button:hover {
@@ -77,4 +96,68 @@ button:hover {
   position: absolute;
   bottom: 54rem;
   left: 35rem;
+}
+
+#windowEmail {
+  max-width: 900px;
+  display: flex;
+  row-gap: 1rem;
+  padding: 2rem;
+  background-color: white;
+  align-items: center;
+  border-radius: 30px;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.161);
+}
+
+#afterClick {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.112);
+  width: 100vw;
+  height: 100vh;
+  margin: 25rem;
+}
+
+.visual {
+  visibility: hidden;
+}
+
+form {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+#emailUser {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-bottom: #6C63FF 1px solid;
+}
+
+#emailSend {
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #6C63FF;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  color: #6C63FF;
+}
+
+#emailSend:hover {
+  transition: 0.3s;
+  color: white;
+  background: #6C63FF;
+}
+
+#svgAstronaut {
+  height: 15rem;
+}
+
+.test {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }

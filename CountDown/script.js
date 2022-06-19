@@ -23,3 +23,26 @@ const countdown = () => {
 
 setInterval(countdown, 1000);
 
+const btnMore = document.querySelector('#openModal');
+const windowEmail = document.querySelector('#afterClick');
+
+btnMore.addEventListener('click', showbox);
+function showbox() {
+  windowEmail.classList.remove('visual')
+}
+document.addEventListener('keydown', function(event) {
+  const isEscKey = event.key === 'Escape'
+  if(isEscKey) {
+    windowEmail.classList.add('visual')
+  }
+})
+
+const btn = document.querySelector("#emailSend");
+
+btn.addEventListener("click", function(e) {
+  e.preventDefault();
+  const email = document.querySelector("#emailUser");
+  const value = email.value;
+
+  console.log(value);
+})
